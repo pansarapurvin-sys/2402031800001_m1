@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        nav{
+            position: sticky;
+            top: 0;
+            background: #333;
+            padding: 15px;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 30px;
+        }
+        nav a:hover{
+            color: lightcoral;
+        }
+        section{
+            padding: 90px 8%;
+        }
+        .section-title h2{
+            font-size: 40px;
+            color: #111;
+        }
+        .section-title p{
+            color: #777;
+        }
+        .menu-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 25px;
+        }
+        .menu{
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .menu:hover{
+            transform: translateY(-8px);
+        }
+        .menu img{
+            width: 100%;
+            height:220px;
+            object-fit: cover;
+        }
+        .menu-contant{
+            padding:20px;
+        }
+        .menu-contant h3{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <section id="menu">
+        <div class="section-title">
+            <h2>Popular Menu</h2>
+            <p>Our most loved dishes and drinks</p>
+        </div>
+        <div class="menu-container">
+            <div class="menu">
+            <img src="https://i.pinimg.com/736x/dc/08/0c/dc080cb349d049b19be530cedb908a70.jpg" alt="pizza" >
+            <div class="menu-contant">
+                <h3>Pizza</h3>
+                <p>Loaded cheesy pizza with fresh toppings and herbs.</p>
+                <span class="price">₹1200</span>
+            </div>
+            </div>
+
+            <div class="menu">
+                <img src="https://i.pinimg.com/736x/ae/45/29/ae4529956ee42dfb3ea7d3655a0bc479.jpg" alt="pasta">
+                <div class="menu-contant">
+                    <h3>pasta</h3>
+                    <p>cheesy pasta for pepito special</p>
+                    <span class="price">₹900</span>
+                </div>
+            </div>
+
+            <div class="menu">
+                <img src="https://i.pinimg.com/736x/fe/81/44/fe8144e30f28913164ea931936b5d926.jpg" alt="Pizza">
+                <div class="menu-content">
+                    <h3>Brovnie</h3>
+                    <p>Loaded chocolate cream with fresh cake and brovnie.</p>
+                    <span class="price">₹699</span>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://i.pinimg.com/736x/87/84/f2/8784f271f849da9a30112f6c7565539d.jpg" alt="Dessert">
+                <div class="menu-content">
+                    <h3>Chocolate Dessert</h3>
+                    <p>Rich chocolate dessert with creamy layers and nuts.</p>
+                    <span class="price">₹699</span>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_815099_1731339076471_jyhyv8hd.png" alt="Hummus Board">
+                <div class="menu-content">
+                    <h3>Hummus Board</h3>
+                    <p>Beetroot labneh, hummus & falafel, crispy pita</p>
+                    <span class="price">₹499</span>
+                </div>
+            </div>
+             <div class="menu">
+                <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_846829_1742738774629_item_846818_1733992631141_265A7589.jpeg" alt="Classic Pizza Sandwich">
+                <div class="menu-content">
+                    <h3>Classic Pizza Sandwich</h3>
+                    <p>Pizza sauce & Mozzarella</p>
+                    <span class="price">₹810</span>
+                </div>
+            </div>
+             <div class="menu">
+                <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_815169_1706741423.1580584.png" alt="Spinach & Ricotta Gnuddi">
+                <div class="menu-content">
+                    <h3>Spinach & Ricotta Gnuddi</h3>
+                    <p>Fresh spinach balls with romesco; served with garlic bread</p>
+                    <span class="price">₹899</span>
+                </div>
+            </div>
+                <div class="menu">
+                    <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_815177_1706741300.231702.png" alt="Filo Roll Ratatouille">
+                    <div class="menu-content">
+                        <h3>Filo Roll Ratatouille</h3>
+                        <p>Baked stuffed Filo on a bed of Ratatouille; served with grilled focaccia</p>
+                        <span class="price">₹855</span>
+                    </div>
+                </div>
+                <div class="menu">
+                <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_815175_1706741633.1963272.png" alt="Spanakopita">
+                <div class="menu-content">
+                    <h3>Spanakopita</h3>
+                    <p>Trio of Exotic vegetables, cheesy spinach & filo; oven baked.</p>
+                    <span class="price">₹859</span>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_815174_1706742036.3560185.png" alt="DessertAsian Buddha Bowl">
+                <div class="menu-content">
+                    <h3>Asian Buddha Bowl</h3>
+                    <p>Spicy paneer, saucy dark soy paired with fried rice & Noodles; stone cooked.</p>
+                    <span class="price">₹999</span>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_815165_1706741660.857503.png" alt="The OG Combination">
+                <div class="menu-content">
+                    <h3>The OG Combination</h3>
+                    <p>Cheese Naan with Paneer makhni.</p>
+                    <span class="price">₹889</span>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_815167_1706741142.5607793.png" alt="Chole Bhatura Zeppole">
+                <div class="menu-content">
+                    <h3>Chole Bhatura Zeppole</h3>
+                    <p>An unique Indian Fusion stuffed with pindi chole.</p>
+                    <span class="price">₹859</span>
+                </div>
+            </div>
+            
+                
+            
+        </div>
+        </section>
+</body>
+</html>

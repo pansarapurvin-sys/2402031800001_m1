@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        nav{
+            position: sticky;
+            top: 0;
+            background: #333;
+            padding: 15px;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 30px;
+        }
+        nav a:hover{
+            color: lightcoral;
+        }
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .section-title p {
+            color: #666;
+    }
+
+        .gallery{
+            display :grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 100px;
+        }
+
+        .gallery img{
+            width: 119%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .gallery img:hover{
+            transform:scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">The Interior</a>
+        <a href="contact.html">Contact Us</a>
+        </nav>
+    
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Gallery</h2>
+            <p>Take a look at our cafe atmosphere</p>
+        </div>
+
+        <div class="gallery">
+            <img src="https://i.pinimg.com/736x/a2/34/85/a23485a1f1946f4f512e74333bbd4ca6.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/736x/c5/49/f8/c549f81981ccb6c999d62f594c187302.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/736x/98/55/40/9855409134dd6d3016a6c25bc5038a18.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/1200x/c8/bf/a9/c8bfa965412c8774d8fe92ca817d12ce.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/736x/cf/e1/35/cfe1355577d5cbd912dcfd2ce4f13d9e.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/control1/736x/eb/32/f1/eb32f1c8af5b2c56a8e161f362124258.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/736x/e4/c6/fb/e4c6fbbf230ceaa2bca7e002c9ee3278.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/736x/8f/a7/74/8fa77471b14e596c35c8af70a7dd5ac5.jpg" alt="Gallery">
+            <img src="https://i.pinimg.com/736x/5e/de/0e/5ede0eb13b0c8163aa7913ecbcd07aef.jpg" alt="Gallery">
+            >
+            
+
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 pepito Cafe | Designed with HTML, CSS & JavaScript</p>
+    </footer>
+</body>
+</html>
